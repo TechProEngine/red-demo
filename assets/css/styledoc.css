@@ -104,7 +104,6 @@
     font-size: 16px;
     line-height: 20px;
     transition: 0.5s;
-    /*overflow: hidden;*/
 }
 .ulist .list .alinky .info span:before{
     content: attr(data-text);
@@ -131,7 +130,7 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  /* border: 2px solid red; */
+  overflow: hidden;
 }
 
 /*Carrousel 3D Animation Content style*/
@@ -148,26 +147,23 @@
   margin-top:-14em;
   padding-top: 10px; 
   line-height:40px;
-  height: 460px;
+  height: 80vh;
   box-sizing: border-box;
-  /* border: 2px solid purple; */
+  overflow: hidden;
 }
-
 .slider-carrousel{
   margin:0 auto;
   width: 200px;
   perspective: 1000px;
   position: relative;
   padding-top: 80px;
-  /* border: 2px solid black; */
 }
 .content-carrousel-3D{
   width: 100%;
   position: absolute;
   float: right;
-  animation: rotar 15s infinite linear;
+  animation: rotar 20s infinite linear;
   transform-style: preserve-3d;
-  /* border: 2px solid pink; */
 
 }
 .content-carrousel-3D:hover{
@@ -180,7 +176,6 @@
   border: 1px solid #4d444d;
   overflow: hidden;
   position: absolute;
-  /* border: 2px solid red; */
 
 }
 .content-carrousel-3D figure:nth-child(1){
@@ -241,18 +236,21 @@
 .page-section-1 {
   padding: 5rem 0;
   line-height: 40px;
-  /* border:2px solid purple; */
-  
+  overflow: hidden;
 }
-
+.visuallyhidden{
+  display: none;
+}
+.visualhidden{
+  overflow: hidden;
+  position: static;
+}
 .heading-site{
   font-family: Inconsolata;
   margin-top:20px;
   font-size:50px;
   color:orange;
   text-shadow:  -5px 5px 5px #88750b54;
-  
-  /*margin-top:-80px;*/
 }
 .site-content{
   font-family: Alata;
@@ -270,15 +268,12 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  /* line-height: 40px; */
-  /* border:2px solid red; */
+  overflow: hidden;
 }
 .action-icon{
   color:orange;
   font-size:25px;
   margin-bottom: -10px;
-  /* border-bottom: 2px solid red; */
-
 }
 .heading-site-carousel{
   font-family: Oswald;
@@ -286,8 +281,6 @@
   font-size: 30px;
   color:rgba(235, 243, 236, 0.924);
   text-shadow:  -10px 5px 5px #49453154;
-  
-  /*margin-top:-80px;*/
 }
 .site-content-carousel{
   font-family: Alata;
@@ -310,7 +303,6 @@
   font-family: Alata;
   line-height:1.6;
   font-size: 14px;
-  /* margin-bottom:20px; */
 }
 .card-indent-text{
   margin-bottom:2em;
@@ -318,25 +310,17 @@
 /* Section 3 */
 .page-section-3 {
   padding: 3rem 0;
-   /*padding-top: 20rem; */
-   /*padding-bottom: calc(5rem - 6.5rem); */
    background: linear-gradient(to bottom, rgba(235, 233, 227, 0.8) 0%, rgba(228, 198, 180, 0.8) 100%), url("../collections/design-img/design_8.jpg"); 
    background-position: center;
-  /*background-repeat: no-repeat;*/
   background-attachment: scroll;
-  /*background-size: cover; */
-  /*border:2px solid red;*/
+  overflow: hidden;
 }
 .heading-site-carousel-sec-3{
   font-family: Inconsolata;
-   /*top:-20rem;*/
    position:relative;
-   /*padding-top: 10rem; */
   font-size:50px;
   color:rgb(68, 4, 4);
   text-shadow:  -5px 5px 5px #46433754;
-   /*border:2px solid red; */
-  /*margin-top:-80px;*/
 }
 .site-content-carousel-sec-3{
   font-family: Alata;
@@ -347,10 +331,10 @@
 /* Section 4 */
 .page-section-4 {
   padding: 3rem 0;
+  overflow: hidden;
 }
 /* Form customization */
 .contact-flex-sec{
-   /*border:2px solid red; */
   padding:10px;
   background:rgba(0,0,0,.8);
   box-sizing:border-box;
@@ -358,7 +342,6 @@
   box-shadow:0 15px 25px rgba(0,0,0,.5);
 }
 .form-dist-intel{
-   /*border:2px solid red; */
   width:100%;
   height:100%;
   padding:10px;
@@ -379,7 +362,6 @@
   border-right: 1px solid #fff;
   border-left: 1px solid #fff;
   border-bottom: 1px solid #fff;
-
 }
 #form5Example1{
   text-transform:capitalize;
@@ -399,7 +381,6 @@
   color:#fff;
   padding:10px;
   font-size:15px;
-  /* border: 2px solid red; */
 }
 .btn-sub-fo button:hover{
   width:50%;
@@ -441,15 +422,16 @@
 .page-section-5 {
   padding: 1rem 0;
   background: linear-gradient(to bottom, rgba(23, 23, 22, 0.8) 0%, rgba(230, 40, 110, 0.8) 100%);
+  overflow: hidden;
 }
 .footer-fluid-content{
   font-family: Dosis;
   color:#fff;
   font-size:15px;
-  /*line-height: 50px;*/
-
 }
 /* End of Footer Custom Style*/
+
+/*Media Query*/
 @media (max-width: 320px) {
   .ulist .list:nth-child(1), 
   .ulist .list:nth-child(2), 
@@ -474,10 +456,10 @@
   .navbar .navbar-brand{
     margin-left:10px;
   }
-
   .heading-site-carousel-sec-3, .heading-site{
     font-size:40px;
   }
+
   /* 3D carousel Effect Style */
   .content-carrousel-3D{
     width:130%;
@@ -546,7 +528,6 @@
   } 
   .content-carrousel-3D{
     width:130%;
-    /* margin-top:-20px; */
   }
   .content-carrousel-3D figure{
     border:1px solid pink;
@@ -554,20 +535,14 @@
     width:120%;
     height:200px;
     overflow:hidden;
-    /* margin-top:-10px; */
-
   }
   .slider-carrousel{
-    /* top:-4rem; */
     margin:0px auto;
-    /* line-height:40px; */
     width: 130px;
-    /* padding-top: 50px; */
   }
    .image-info{
     margin-top:170px;
   }
-
   #textExample1{
   font-size:10px;
   font-weight: bold;
@@ -578,7 +553,6 @@
   .navbar .ulist .list{
     margin-bottom:0.2rem;
     justify-content: center;
-
   }
   .navbar .ulist .list .alinky{
     margin-bottom: 0.5rem;
